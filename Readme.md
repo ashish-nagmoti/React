@@ -109,3 +109,22 @@ textarea, select, radio. Triggers  function every time input changes
 fn passed as an arg to setState() usually ex setYear(year+1)
 update fn ->arro fn , ex setYear(arrow fn)
 allow forsafe updates based on prev state used with mulitple state updates and asynchronus funtions, good practice to use updated functions
+
+
+# useEffect() 
+react hook that tells react to do some code when(pick one)
+- component re-renders
+- component mounts
+- state of value
+
+useEffect(function, [dependecies])
+//1.useEffect(() => {}) //run after every reredner
+//2.useEffetc(() => {},[]) //runs only on mount
+//3.useEffect(() => {},[value]) //runs on mount +when val change
+
+//USES
+- event listners
+- dom manipulation
+- subscription(real time updates)
+- fetching data from api
+- clean up when component unmounts
