@@ -96,7 +96,7 @@ Special fn that allows fn componenets to use react features without writing clas
 
 # useState()
 react hook that allows cration of stateful variable And setter function to update it's value to virtual DOM [name, setName]
-
+- re-renders the comp when state val changes
 ---
 
 # onChange()
@@ -144,3 +144,9 @@ levels of components wihtout passing props thorugh each level
 1.import React,{useContext} from 'react';
     import {MyContext} from './ComponentA';
 2.const value = useContext{MyContext}; 
+
+# useRef()
+- "use Reference" does not cause re-renders like useState, when it's value changes. When you want a component to "remember" some info, but you don't want that info to trigger new renders.
+1. accessing/interacting with dom elements
+2.handling focus, animations and transitions
+3.handling timers and intervals
